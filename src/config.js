@@ -42,8 +42,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 350,
+  height: 350,
   smoothing: false,
 };
 
