@@ -21,3 +21,6 @@ Linea 44: colocar el tamaño en pixels de las imágenes que quiero
 
 ### Crear .gif ademas de las imágenes fijas
 Línea 51: true = crear .gif / false = no crear .gif
+
+### Añadir metadata adicional para el nft
+Línea 81: se puede añadir metadata con un nombre y descripción, esto será agregado a los json generados por la app

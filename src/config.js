@@ -80,6 +80,7 @@ const background = {
 
 const extraMetadata = {
   external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  newName: "probando metadata, poner cualquier cosa como el valor de un bono de inversión",
 };
 
 const rarityDelimiter = "#";
