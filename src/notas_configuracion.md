@@ -1,16 +1,20 @@
+# Algunas notas para la configuración del este programa
+
+## carpetas con las capas de las imágenes
+
 ### configurar las carpetas con capas
 - Remplazar las carpetas que se vayan a usar en "layers"
 - Puede colocarse imagenes vacias (transparentes) con el nombre "blank2 y no van a aparecer en la data subida
 - Puede manejarse la rareza de las capas colocanco /*<nombre #peso>*/ por ejemplo azul #10
 
-# Cambiar datos en src/config.js
+## Cambiar datos en src/config.js
 
 ### Datos de la colección
 En las líneas 8 al 11 cambiar los datos de acuerdo a la colección que se vaya a crear
 
-const namePrefix = "Nombre de la colección / Your Collection";
-const description = "Descripción de la colección aca /Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+*const namePrefix = "Nombre de la colección / Your Collection";*
+*const description = "Descripción de la colección aca /Remember to replace this description";*
+*const baseUri = "ipfs://NewUriToReplace";*
 
 ### Número de imágenes generadas
 Línea 27: colocar el número de imágenes que se desea crear
@@ -23,4 +27,4 @@ Linea 44: colocar el tamaño en pixels de las imágenes que quiero
 Línea 51: true = crear .gif / false = no crear .gif
 
 ### Añadir metadata adicional para el nft
-Línea 81: se puede añadir metadata con un nombre y descripción, esto será agregado a los json generados por la app, se debe revisar los nombres usados enlas plataformas para que coincidan
+Línea 81: se puede añadir metadata con un nombre y descripción, esto será agregado a los json generados por la app, se debe revisar los nombres usados en las plataformas para que coincidan
