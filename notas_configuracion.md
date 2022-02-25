@@ -28,3 +28,34 @@ Línea 51: true = crear .gif / false = no crear .gif
 
 ### Añadir metadata adicional para el nft
 Línea 81: se puede añadir metadata con un nombre y descripción, esto será agregado a los json generados por la app, se debe revisar los nombres usados en las plataformas para que coincidan
+
+## Usando NFTport
+
+### 1 obtener la API de NFTport
+Desde el sitio NFTport.xyz ir obtener api key gratis, resguardar
+
+### 2 crear contrato NFT ERC721
+- Desde el sitio ir a contracts > Deploy an NFT contract
+- Owner address para la prueba 0xe53cc759f8b4ea9b655f777d2105518503f678f4
+- Red para la prueba rinkerby (metamask chrome)
+- código para crear contrato
+*{
+  "chain": "rinkeby", <cadena de deployment>
+  "name": "Prueba Ubikalo", <Nombre de la coleccion/contrato>
+  "symbol": "Pubk", <ticker del contrato>
+  "owner_address": "0xe53cc759f8b4ea9b655f777d2105518503f678f4", <Wallet del creador>
+  "type": "erc721" <tipo de contrato>
+}*
+
+==> respuesta del contrato generado
+*{
+  "response": "OK",
+  "chain": "rinkeby",
+  "transaction_hash": "0xf93025d7f12174a5de41ee743dda33747c233b9748f0f1074259f25d29aedcdb",
+  "transaction_external_url": "https://rinkeby.etherscan.io/tx/0xf93025d7f12174a5de41ee743dda33747c233b9748f0f1074259f25d29aedcdb",
+  "owner_address": "0xe53cc759f8b4ea9b655f777d2105518503f678f4",
+  "name": "Prueba Ubikalo",
+  "symbol": "Pubk"
+}*
+
+
