@@ -38,7 +38,7 @@ Desde el sitio NFTport.xyz ir obtener api key gratis, resguardar
 - Desde el sitio ir a contracts > Deploy an NFT contract
 - Owner address para la prueba 0xe53cc759f8b4ea9b655f777d2105518503f678f4
 - Red para la prueba rinkerby (metamask chrome)
-- código para crear contrato
+- Código para crear contrato
 *{
   "chain": "rinkeby", <cadena de deployment>
   "name": "Prueba Ubikalo", <Nombre de la coleccion/contrato>
@@ -47,7 +47,7 @@ Desde el sitio NFTport.xyz ir obtener api key gratis, resguardar
   "type": "erc721" <tipo de contrato>
 }*
 
-==> respuesta del contrato generado
+- Contrato de prueba generado ==> respuesta del contrato generado
 *{
   "response": "OK",
   "chain": "rinkeby",
@@ -58,4 +58,26 @@ Desde el sitio NFTport.xyz ir obtener api key gratis, resguardar
   "symbol": "Pubk"
 }*
 
+### subir imagen al IPFS
+
+- Ir a la carpeta "utils" > "nftport" > "uploadFiles.js"<b>
+Este archivo permite subir la imagen al IPFS y actualizar esa direccion en los archivos build/json/
+<b>
+El comando es *node utils/nftport/uploadFiles.js*
+
+### subir metadata individual para cada NFT al IPFS
+
+- Ir a la carpeta "utils" > "nftport" > "uploadMetas.js"<b>
+Este archivo permite subir la metadata de cada NFT revelado al IPFS y actualizar esa direccion en los archivos build/json/
+<b>
+El comando es *node utils/nftport/uploadMetas.js*
+
+### subir metadata generica para cada NFT al IPFS en casos de *revelado de NFT*
+
+- Ir a la carpeta "utils" > "nftport" > "genericMetas.js"<b>
+Este archivo permite subir la data genérica para una colección de NFTs sin "revelar" aún imagen al IPFS y actualizar esa direccion en los archivos build/_ipfsMetas
+<b>
+Linea 21:Actualizar la imagen en IPFS que se usará para revelar
+<b>
+El comando es *node utils/nftport/genericMetas.js*
 

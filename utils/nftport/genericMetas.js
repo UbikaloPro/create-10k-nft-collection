@@ -19,7 +19,7 @@ fs.readdirSync(`${buildDir}/json`).forEach((file) => {
   jsonFile.description = GENERIC_DESCRIPTION;
   jsonFile.file_url =
     "https://ipfs.io/ipfs/QmUf9tDbkqnfHkQaMdFWSGAeXwVXWA61pFED7ypx4hcsfh";
-    // This is an example url, replace with yours.
+    // reemplazar esta direccion con una imagen genérica subida a IPFS y que se verá ANTES de revelar los NFT.
   delete jsonFile.attributes;
   delete jsonFile.custom_fields.dna;
 
