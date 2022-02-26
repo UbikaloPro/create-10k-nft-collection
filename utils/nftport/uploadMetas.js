@@ -4,7 +4,7 @@ const basePath = process.cwd();
 const fs = require("fs");
 const readDir = `${basePath}/build/json`; // change this directory if you are uploading generic images first in order to do a reveal.
 
-const AUTH = '52e5fe6c-cffd-485e-92a5-4d0d6b8e15d5';
+const AUTH = 'Auth nftport Key ';
 const TIMEOUT = 1000; // Milliseconds. Extend this if needed to wait for each upload. 1000 = 1 second.
 
 const allMetadata = [];
